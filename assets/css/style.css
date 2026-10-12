@@ -250,6 +250,16 @@ h1,h2,h3{font-family:var(--font-hi);line-height:1.35;margin:.9rem 0}
   border:2px solid var(--gold);padding:1.5rem;color:#f3e3b3;
 }
 .expert__portrait .big{font-size:4rem;line-height:1}
+.expert__portrait--photo{padding:.9rem;display:block}
+.expert__portrait--photo img{
+  width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top center;
+  border-radius:12px;border:1px solid rgba(212,175,55,.65);background:#0d0709;
+  box-shadow:0 14px 40px rgba(0,0,0,.5);
+}
+.expert__caption{text-align:center;padding:.9rem .3rem .2rem;color:#f3e3b3}
+.expert__caption strong{display:block;font-family:var(--font-hi);color:var(--gold-2);font-size:1.25rem}
+.expert__caption span{font-size:.9rem;opacity:.85}
+.g-photo{width:100%;border-radius:10px;border:1px solid rgba(212,175,55,.5)}
 .badge{display:inline-block;padding:.3rem .8rem;border-radius:999px;
   background:rgba(212,175,55,.15);border:1px solid rgba(212,175,55,.4);font-size:.88rem;color:var(--gold-2)}
 
@@ -337,6 +347,13 @@ footer a:hover{color:#fff;text-decoration:underline}
   background:var(--gold-gradient);color:#2b1206;font-size:1.5rem;text-decoration:none;
   box-shadow:0 12px 30px rgba(0,0,0,.45);border:2px solid #fff;
 }
+.float-insta{
+  position:fixed;right:16px;bottom:156px;z-index:70;
+  width:60px;height:60px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;text-decoration:none;
+  box-shadow:0 12px 30px rgba(0,0,0,.45);border:2px solid #fff;
+}
+.float-insta svg{width:28px;height:28px}
 
 /* ---------- Overflow safeguards (no side-shift on mobile) ---------- */
 html,body{overflow-x:clip;max-width:100%}
@@ -396,7 +413,8 @@ html,body{overflow-x:clip;max-width:100%}
   .call-box{padding:1.2rem}
   .form{padding:1.2rem}
   .strip{grid-template-columns:1fr}
-  .float-wa,.float-call{width:52px;height:52px;font-size:1.4rem}
+  .float-wa,.float-call,.float-insta{width:52px;height:52px;font-size:1.4rem}
+  .float-insta svg{width:24px;height:24px}
 }
 :focus-visible{outline:2px solid var(--gold-2);outline-offset:3px}
 .skip-link{position:absolute;left:-9999px;top:0;background:var(--gold);color:#000;padding:.6rem 1rem;z-index:100}
